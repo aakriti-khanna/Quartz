@@ -1,0 +1,318 @@
+/* Apply a blue-grey background to the main container */
+.hero{
+  display: flex;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3a6073, #16222a);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the card with a gradient background, rounded corners, and shadow */
+.card {
+  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  height: 95vh;
+  margin-top: 3px;
+}
+
+h3 {
+  color:#071a53;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+h3:hover{
+  color:   #02a8f0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rating-label input {
+  display: none;
+}
+
+.rating-label span {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rating-label svg {
+  width: 40px;
+  height: 40px;
+  color: #888;
+  transition: color 0.2s;
+}
+
+/* Different colors for different rating emojis */
+.rating-label input[value="terrible"]:checked + svg {
+  color: red;
+}
+
+.rating-label input[value="bad"]:checked + svg {
+  color: #ff4500;
+}
+
+.rating-label input[value="okay"]:checked + svg {
+  color: #ffa500;
+}
+
+.rating-label input[value="good"]:checked + svg {
+  color: #32cd32;
+}
+
+.rating-label input[value="amazing"]:checked + svg {
+  color: #1e90ff;
+}
+
+/* Default color change on hover for rating emojis */
+.rating-label:hover svg {
+  color: #007bff;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 14px;
+  background-color: #f4f7f9;
+  height: 190px;
+}
+
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.submit-button, .cancel-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #0a1a2d;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #000;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.faq-section {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  /* max-width: 600px; */
+  height: auto; /* Adjust height to fit content */
+  margin-bottom: 20px; /* Add margin to separate from the card */
+  margin-right: 55px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 18px;
+}
+
+.faq-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.faq-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-section li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+  /* Styles for screens up to 991px */
+  .container {
+      flex-direction: column;
+  }
+
+  .container .contactInfo {
+      width: 100%;
+      height: auto;
+  }
+
+  .container .contactForm {
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  .container .contactInfo ul.info li,
+  .container .contactInfo ul.sci li {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .container .contactInfo ul.sci {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Styles for screens up to 600px */
+  main{
+    height: fit-content;
+  }
+  .hero{
+    flex-direction: column;
+    margin-top: 350px;
+    /* background-color: green;  */
+  }
+  .container .contactInfo,
+  .container .contactForm {
+      padding: 15px;
+  }
+
+  .container .contactInfo ul.sci {
+      margin-top: 20px;
+  }
+
+  .container .contactForm .formBox .inputBox {
+      margin-bottom: 20px;
+  }
+  .faq-section{
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  /* Styles for screens up to 440px */
+  main {
+      padding: 10px;
+  }
+
+  .faq-section,
+  .card {
+      width: 100%;
+      padding: 15px;
+      margin-right: 0;
+  }
+
+  .rating-label svg {
+      width: 25px;
+      height: 25px;
+  }
+
+  textarea {
+      height: 150px;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .faq-section {
+      margin-top: 20px;
+  }
+
+  .faq-section,
+  .contactForm {
+      padding: 10px;
+  }
+
+  .faq-section h3,
+  .contactForm h2 {
+      font-size: 20px;
+  }
+
+  .faq-section ul {
+      padding-left: 20px;
+  }
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #3933a9;
+  --primary-color-dark: #2c41a1ea;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --bg-blue: #e0f7fa;
+  --bg-grey: #eceff1;
+ 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section__container {
+  max-width: var(--max-width); 
+  /* margin-top: -2rem; */
+   padding: 5rem 1rem;
+   
+}
+
+
+.section__subheader {
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-weight: 600;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+}
+
+
+.section__subheader::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(1rem, -50%);
+  height: 2px;
+  width: 4rem;
+  background-color: var(--primary-color);
+}
+
+.section__header {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  font-size: 3rem; /* Increased font size */
+  font-weight: 700; /* Increased font weight */
+  line-height: 3.5rem;
+  color: var(--text-dark);
+}
+
+.section__description {
+  max-width: 600px;
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  color: var(--text-light);
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.about__container {
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about__image {
+  animation: slideInLeft 1s ease-out;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.about__content {
+  animation: fadeInDown 1s ease-out;
+}
+
+.about__btn {
+  margin-top: 1rem;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path/to/clock-icon.svg'); /* Replace with actual path */
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  opacity: 0.1; /* Adjust opacity for subtle effect */
+}
+
+.about__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path/to/clock-icon.svg'); /* Replace with actual path */
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  opacity: 0.1; /* Adjust opacity for subtle effect */
+}
+
+.logo {
+  max-width: 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+@media (width > 768px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}

@@ -1,0 +1,62 @@
+.section__container.banner__container {
+    padding: 4rem 0;
+  }
+  
+  .banner__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* .banner__card {
+    text-align: center;
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+  .banner__card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .banner__card h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .banner__card p {
+    color: var(--text-light);
+    margin-top: 1rem;
+  }
+
+  .banner__card {
+    position: relative; /* Add this to make positioning the shadow easier */
+    text-align: center;
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add a pseudo-element for the shadow */
+  .banner__card::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Adjust this value to control the distance of the shadow */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px; /* Adjust the height of the shadow */
+    background-color: #a0d0f6; /* Light blue color */
+    border-radius: 50%;
+    z-index: -1; /* Ensure the shadow is behind the card */
+    opacity: 0.7; /* Adjust the opacity of the shadow */
+    filter: blur(5px); /* Add a blur effect to the shadow */
+  }
+  

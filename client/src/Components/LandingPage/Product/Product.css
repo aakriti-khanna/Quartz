@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #3933a9;
+  --primary-color-dark: #2c41a1ea;
+  --secondary-color: #001f3f; /* Dark blue for accents */
+  --accent-color: #0052cc; /* Light blue for softer accents */
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --text-muted: #5a6473; /* New muted text color */
+  --white: #ffffff;
+  --max-width: 1200px;
+  --bg-blue: #e0f7fa;
+  --bg-grey: #eceff1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Room card styles */
+.room__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 3fr));
+  gap: 5rem; /* Increased gap between cards */
+  margin-left: 4.5rem;
+}
+
+.room__card {
+  overflow: hidden;
+  border-radius: 15px; /* Increased border-radius for a smoother look */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white);
+  margin-left: 4px;
+}
+
+.room__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.room__card__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.room__card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth image zoom on hover */
+}
+
+.room__card:hover .room__card__image img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.room__card__icons {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.room__card__icons span {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced icon shadow */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for icon effects */
+}
+
+.room__card__icons span:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+}
+
+.room__card__icons span:nth-child(1) {
+  color: #f472b6;
+}
+
+.room__card__icons span:nth-child(2) {
+  color: #c084fc;
+}
+
+room__card__icons span:nth-child(3) {
+  color: #60a5fa;
+}
+
+.room__card__details {
+  padding: 1.5rem; /* Increased padding for better spacing */
+  text-align: center; /* Center-align text */
+}
+
+.room__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 600; /* Increased font weight */
+  color: var(--secondary-color);
+}
+
+.room__card p {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 1rem; /* Adjusted font size for consistency */
+}
+
+.room__card h5 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: 500; /* Adjusted font weight */
+  color: var(--primary-color);
+}
+
+.room__card .btn {
+  padding: 0.75rem 1.5rem; /* Adjusted padding */
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border-radius: 10px; /* Increased border-radius for a smoother look */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.room__card .btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px); /* Lift effect on hover */
+}

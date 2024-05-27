@@ -1,0 +1,152 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px;
+  }
+  
+  .carousel-main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: zoomEffect 10s infinite;
+  }
+  
+  @keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+/* src/Components/TypingAnimation.css */
+
+.landing-carousel {
+  position: relative;
+  height: 60vh;
+  /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.landing-carousel-content {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.landing-carousel-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.landing-carousel-subheading {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-carousel-heading {
+    font-size: 3rem;
+  }
+
+  .landing-carousel-subheading {
+    font-size: 1.2rem;
+  }
+}
+
+  
+  
+  
+  
+  .carousel-thumbnail {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-thumbnail img {
+    width: 300px;
+    height: 150px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-thumbnail img:hover {
+    transform: scale(1.1);
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  /* Responsive CSS */
+  @media screen and (max-width: 768px) {
+    .carousel-thumbnail img {
+      width: 70px;
+      height: 100px;
+    }
+  
+    .typing-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 840px) and (min-width: 600px) {
+    .carousel-thumbnail img {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .typing-text {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 1034px) and (min-width: 840px) {
+    .carousel-thumbnail img {
+      width: 170px;
+      height: 100px;
+    }
+  
+    .typing-text {
+      font-size: 2rem;
+    }
+  }
+  

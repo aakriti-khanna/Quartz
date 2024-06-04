@@ -10,8 +10,13 @@ const GalleryP = () => {
 
         <div className="Gall1">
           <h1>Gallery</h1>
+          <div className="lines">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-       <div className='Gall2'>
+        </div>
+       <div className='Gall2 p-4'>
          <Gallery />
     </div>
     </div>

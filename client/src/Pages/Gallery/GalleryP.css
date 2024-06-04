@@ -9,22 +9,61 @@
   .Gall1 {
     margin-bottom: 20px;
     text-align: center;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+    background: rgb(238, 236, 236);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    
   }
   
   .Gall1 h1 {
-    font-size: 3rem;
-    color: white;
+    font-size: 10em;
+    color:  #182583;
     margin: 0;
     position: relative;
     display: inline-block;
-    animation: fadeInText 2s ease-in-out, textShadowPulse 3s infinite;
+    animation: fadeInText 2s ease-in-out;
+    /* background-image:url(../../assets/Q1.jpg); */
+    background-size: cover;
+    width: 100%;
   }
+
+  .lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px; /* Adjust the height as needed */
+    margin: 20px 0;
+  }
+  .lines div{
+    margin: 0 0.5rem;
+
+}
+.lines div:nth-child(1),
+.lines div:nth-child(3){
+    height: 3px;
+    width: 200px;
+    background: #928e8f;
+    border-radius: 5px;
+}
+.lines{
+    display: flex;
+    align-items: center;
+}
+.lines div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #4545aa;
+    border-radius: 50%;
+}
+
   
   @keyframes fadeInText {
     0% {
@@ -39,13 +78,13 @@
   
   @keyframes textShadowPulse {
     0% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff1177, 0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 30px #ff1177, 0 0 35px #ff1177;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #182583, 0 0 20px #182583, 0 0 25px#182583, 0 0 30px#182583, 0 0 35px #182583;
     }
     50% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 60px #ff1177, 0 0 70px #ff1177;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #182583, 0 0 40px#182583, 0 0 50px#182583, 0 0 60px #182583, 0 0 70px#182583;
     }
     100% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff1177, 0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 30px #ff1177, 0 0 35px #ff1177;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #182583, 0 0 20px #182583, 0 0 25px#182583, 0 0 30px #182583, 0 0 35px#182583;
     }
   }
   

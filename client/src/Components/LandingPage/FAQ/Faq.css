@@ -1,13 +1,10 @@
-.faq-section {
-    margin-top: 50px; /* Adjust as needed */
-    width: 100% !important;
-  }
+
   
-  .faq-item {
+  .faqs-item {
     margin-bottom: 20px; /* Adjust as needed */
   }
   
-  .faq-question {
+  .faqs-question {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -18,11 +15,11 @@
     background-color: #f9f9f9;
   }
   
-  .faq-question:hover {
+  .faqs-question:hover {
     background-color: #e9e9e9;
   }
   
-  .faq-answer {
+  .faqs-answer {
     padding: 10px;
     border: 1px solid #ccc;
     border-top: none;
@@ -30,14 +27,78 @@
     background-color: #fff;
   }
 
-  .faq-container {
+  .faqs-container {
     display: flex;
     justify-content: space-between;
   }
   
-  .faq-list {
+  .faqs-list {
     width: calc(50% - 10px); 
   }
 
   
   
+  
+.faqs-section {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* width: 60%; */
+  /* max-width: 600px; */
+  height: auto; /* Adjust height to fit content */
+  margin-bottom: 20px; /* Add margin to separate from the card */
+  margin-right: 55px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 18px;
+  margin-top: 50px; /* Adjust as needed */
+  width: 100% !important;
+}
+
+.faqs-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.faqs-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqs-section li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.faqs-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.faqs-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faqs-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.faqs-answer {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}

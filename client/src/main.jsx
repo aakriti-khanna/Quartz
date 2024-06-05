@@ -27,14 +27,14 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     
      
-       <Route path="/" element={<App />}>
+       <Route path="/" element={<App/>}>
       {/* <Route path='/contacts' element={<Contact/>} /> */}
       <Route path="/gallery" element={<GalleryP />} />
       <Route path="/About" element={<ParentComponent />} />
       <Route path="/contact" element={<ParentCompo />} />
       {/* <Route path="/contact" element={<ContactApp />} /> */}
       <Route path="/newFeed" element={<NewFeedb />} />
-      <Route path="/Home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/Silicasand" element={<Silica />} />
       <Route path="/Quartz" element={<Quartz />} />
       <Route path="/Mining" element={<Mining />} />

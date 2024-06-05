@@ -1,7 +1,7 @@
 import React from "react";
 
 import Nav from "../Components/Nav";
-// import { Footer } from 'flowbite-react'
+import  Footer  from "../Components/Footer/footer.jsx";
 
 import Carousel from "../Components/Carousel/Carousel";
 import Labout from "../Components/LandingPage/Labout/Labout";
@@ -17,11 +17,12 @@ const Home = () => {
 
 
   return (
-    // <Nav />
+    
     // <div>Home</div>
     <>
    
     <div className="Home">
+
       <div className="Carousel-About">
         <Carousel />
       </div>
@@ -45,6 +46,7 @@ const Home = () => {
       <div className="FAQ">
         <FAQ />
       </div>
+
     </div>
     </>
   );

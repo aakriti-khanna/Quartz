@@ -1,24 +1,24 @@
 import React from 'react'
 import "./processing.css";
-import QuartzImage from "../../../assets/CrystalQuartz.jpg";
+import ProcessImage from "../../../assets/Processing.jpg";
 
 const Processing = () => {
   return (
-    <div className='ProContainer'> Processing
+    <div className='ProContainer'> 
       <div className="Min-img">
         <div className="head0"> SILICA FLOOR INDUSTRIES</div>
         <div className="head1">
-          <h1>MINING</h1>
+          <h1>PROCESSING</h1>
         </div>
       </div>
 
       <div className="sec__container Quartz__container" id="about">
         <div className="Mining__image ">
-          <img src={QuartzImage} alt="Mining" className="h-96" />
+          <img src={ProcessImage} alt="Mining" className="h-96" />
         </div>
         <div className="Mining__content">
-          <p className="Mining__subheader">MINING</p>
-          <h2 className="Mining__header">The Beginning Start Here!</h2>
+          <p className="Mining__subheader">Processing</p>
+          <h2 className="Mining__header">The Second Stage Is Here </h2>
           <p className="Mining__description leading-loose">
             Sora White Pvt. Ltd. not only excels in manufacturing and exporting
             high-quality minerals but also has a strong foothold in the mining

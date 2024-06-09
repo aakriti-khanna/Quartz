@@ -1,11 +1,11 @@
 import React from "react";
 import "./Mining.css";
-import QuartzImage from "../../../assets/CrystalQuartz.jpg";
+import MiningImage from "../../../assets/Mining.jpg";
 
 const Mining = () => {
   return (
     <div className="MinContainer">
-      <div className="Min-img">
+      <div className="Mini-img">
         <div className="head0"> SILICA FLOOR INDUSTRIES</div>
         <div className="head1">
           <h1>MINING</h1>
@@ -14,7 +14,7 @@ const Mining = () => {
 
       <div className="sec__container Quartz__container" id="about">
         <div className="Mining__image ">
-          <img src={QuartzImage} alt="Mining" className="h-96" />
+          <img src={MiningImage} alt="Mining" className="h-96" />
         </div>
         <div className="Mining__content">
           <p className="Mining__subheader">MINING</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Silica.css";
-import QuartzImage from "../../../assets/CrystalQuartz.jpg";
+import QuartzImage from "../../../assets/imag.jpg";
 import PostCarousel from "../../../Components/PostCarousel/PostCarousel.jsx";
 const Silica = () => {
   const handleScroll = () => {
@@ -26,7 +26,7 @@ const Silica = () => {
           <img src={QuartzImage} alt="Quartz" className="h-96" />
         </div>
         <div className="Quartz__content">
-          <p className="Quartz__subheader">Quartz</p>
+          <p className="Quartz__subheader">Silica</p>
           <h2 className="Quartz__header">The Best Holidays Start Here!</h2>
           <p className="Quartz__description leading-loose">
             Quartz is a mineral composed of silicon and oxygen atoms in a

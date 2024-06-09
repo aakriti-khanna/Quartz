@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Quality.css";
-import QuartzImage from "../../../assets/CrystalQuartz.jpg";
+import QualityImage from "../../../assets/Quality.jpg";
 
 const Quality = () => {
   return (
@@ -14,13 +14,13 @@ const Quality = () => {
 
       <div className="sec__container Quartz__container" id="about">
         <div className="Mining__image ">
-          <img src={QuartzImage} alt="Mining" className="h-96" />
+          <img src={QualityImage} alt="Mining" className="h-96" />
         </div>
         <div className="Mining__content">
           <p className="Mining__subheader">Quality  </p>
-          <h2 className="Mining__header">The Beginning Start Here!</h2>
+          <h2 className="Mining__header">The Final Stage Is Here !</h2>
           <p className="Mining__description leading-loose">
-            Sora White Pvt. Ltd. not only excels in manufacturing and exporting
+           Silica Floor Indutries not only excels in manufacturing and exporting
             high-quality minerals but also has a strong foothold in the mining
             sector. Our mining operations are a testament to our commitment to
             excellence and sustainability in the mineral industry.  
@@ -44,7 +44,7 @@ const Quality = () => {
             control measures from extraction to the final product, guaranteeing
             customer satisfaction and loyalty. </p>
 
-            <p className="Mining__description leading-loose">  At Sora White, mining isn't just
+            <p className="Mining__description leading-loose">  At Silica Floor, mining isn't just
             about extraction—it's about responsibly harnessing the Earth's
             resources to provide sustainable solutions for our valued customers
             while preserving the environment for future generations.</p>

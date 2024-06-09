@@ -2,6 +2,17 @@ import React from "react";
 import "./Quartz.css";
 import QuartzImage from "../../../assets/CrystalQuartz.jpg";
 import PostCarousel from "../../../Components/PostCarousel/PostCarousel.jsx";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import image1 from '../../../assets/imag.jpg';
+import image2 from '../../../assets/Sisand.jpg';
+import image3 from '../../../assets/Silica.jpg';
+import image4 from '../../../assets/Silica4.jpeg';
+import image5 from '../../../assets/silica1.jpeg';
+import image6 from '../../../assets/silica2.jpeg';
+import "./Quartz.css"; // Import the CSS file
 const Quartz = () => {
   const handleScroll = () => {
     const elements = document.querySelectorAll(".animate-on-scroll");
@@ -12,12 +23,15 @@ const Quartz = () => {
         element.classList.remove("animated");
       }
     });
-  };
+  };   
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  
+ 
 
   return (
     <div className="QuartzMain">
@@ -41,14 +55,7 @@ const Quartz = () => {
         </div>
       </div>
       <div className="Quartz-products">
-        <div className="Quartz-A">
-          <h1 className="text-5xl font-bold text-indigo-800 ml-24">
-            Our Products
-          </h1>
-        </div>
-        <div className="Quartz-B">
-          <PostCarousel />
-        </div>
+        
       </div>
 
       <div className="chemical-specs ">

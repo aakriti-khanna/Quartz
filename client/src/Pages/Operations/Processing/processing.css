@@ -10,7 +10,7 @@
 
 /* style.css or any other CSS file */
 .Min-img {
-    background-image: url("../../../assets/galler16.jpg");
+    background-image: url("../../../assets/Processing.jpg");
 
     height: 400px;
     background-size: cover; /* Ensures the image covers the entire div */
@@ -95,10 +95,11 @@
   }
   
   .Mining__image img {
-   width: 82%;
-    height: 30%;
+   width: 85%;
+    height: 457px;
     border-radius: 22px;
     background-size: contain;
+    margin-bottom: 40px;
   }
   
   .Mining__content {

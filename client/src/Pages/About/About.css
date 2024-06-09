@@ -12,21 +12,110 @@
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
-.about__section {
+/* .about__section {
   width: 100%;
   height: 400px; /* Set height to 100% */
-  background-image: url(../../assets/About.jpg);
+  /* background-image: url(../../assets/About.jpg);
   background-size: cover; /* Use cover to fill the container */
-  background-position: center; /* Center the background image */
-
-}
-.about__content {
+  /* background-position: center; Center the background image */
+/* } */ 
+/* .about__content {
   animation: fadeIn 1s ease forwards;
   /* background-color: #333; Dark background color */
-  padding: 20px; /* Add padding for better readability */
-  border-radius: 10px; /* Rounded corners */
+  /* padding: 20px; Add padding for better readability */
+  /* border-radius: 10px; Rounded corners */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Add shadow for depth */
+/* } */
+/* GalleryP.css */
+
+.Gall {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
+
+.Gall1 {
+  margin-bottom: 20px;
+  text-align: center;
+  /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+  background: rgb(238, 236, 236);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  
+}
+
+.Gall1 h1 {
+  font-size: 10em;
+  color:  #182583;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  animation: fadeInText 2s ease-in-out;
+  /* background-image:url(../../assets/Q1.jpg); */
+  background-size: cover;
+  width: 100%;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px; /* Adjust the height as needed */
+  margin: 20px 0;
+}
+.lines div{
+  margin: 0 0.5rem;
+
+}
+.lines div:nth-child(1),
+.lines div:nth-child(3){
+  height: 3px;
+  width: 200px;
+  background: #928e8f;
+  border-radius: 5px;
+}
+.lines{
+  display: flex;
+  align-items: center;
+}
+.lines div:nth-child(2){
+  width: 10px;
+  height: 10px;
+  background: #4545aa;
+  border-radius: 50%;
+}
+
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textShadowPulse {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #182583, 0 0 20px #182583, 0 0 25px#182583, 0 0 30px#182583, 0 0 35px #182583;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #182583, 0 0 40px#182583, 0 0 50px#182583, 0 0 60px #182583, 0 0 70px#182583;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #182583, 0 0 20px #182583, 0 0 25px#182583, 0 0 30px #182583, 0 0 35px#182583;
+  }
+}
+
 
 @keyframes fadeIn {
   from {
@@ -43,7 +132,6 @@
   font-weight: bold; /* Bold text */
   text-transform: uppercase; /* Uppercase text */
 }
-
 
 .my__container.animate {
   opacity: 1;
@@ -76,11 +164,9 @@
   margin-bottom: 20px;
 }
 
-
 .values__btn {
   text-align: center;
 }
-
 
 .btn {
   background-color: #007bff;
@@ -95,7 +181,6 @@
 .btn:hover {
   background-color: #0056b3;
 }
-
 
 .chooseus__section {
   display: flex;
@@ -193,3 +278,11 @@
   }
 }
 
+/* Change text color for Mission, Vision, and Why Choose Us */
+.mission__section .section__header,
+.vision__section .section__header,
+.chooseus__section .section__header ,
+.values__section .section__header ,
+.trust__section .section__header {
+  color: #1442a6;
+}

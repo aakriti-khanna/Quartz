@@ -243,28 +243,14 @@ const Rooms = () => {
             </div>
           </div>
           <div className="room__card__details">
-            <h4>Deluxe Ocean View</h4>
-            <p>Bask in luxury with breathtaking ocean views from your private suite.</p>
-            <h5>Starting from <span>$299/night</span></h5>
-            <button className="btn">Book Now</button>
+            <h4>Silica Sand</h4>
+            <p> Available in high purity levels, making it suitable for applications</p>
+          
+            <a href='./Silicasand'><button className="btn"> Read More</button></a>
           </div>
         </motion.div>
-        <motion.div className="room__card" variants={itemVariants}>
-          <div className="room__card__image">
-            <img src={Silica} alt="room" />
-            <div className="room__card__icons">
-              <span><i className="ri-heart-fill"></i></span>
-              <span><i className="ri-paint-fill"></i></span>
-              <span><i className="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div className="room__card__details">
-            <h4>Executive Cityscape Room</h4>
-            <p>Experience urban elegance and modern comfort in the heart of the city.</p>
-            <h5>Starting from <span>$199/night</span></h5>
-            <button className="btn">Book Now</button>
-          </div>
-        </motion.div>
+
+
         <motion.div className="room__card" variants={itemVariants}>
           <div className="room__card__image">
             <img src={Q1} alt="room" />
@@ -275,12 +261,31 @@ const Rooms = () => {
             </div>
           </div>
           <div className="room__card__details">
-            <h4>Family Garden Retreat</h4>
-            <p>Spacious and inviting, perfect for creating cherished memories with loved ones.</p>
-            <h5>Starting from <span>$249/night</span></h5>
-            <button className="btn">Book Now</button>
+            <h4>Quartz</h4>
+            <p> Quartz is highly resistant to weathering, erosion, and chemical corrosion.</p>
+           
+            <a href='./Quartz'><button className="btn"> Read More</button></a>
           </div>
         </motion.div>
+
+        <motion.div className="room__card" variants={itemVariants}>
+          <div className="room__card__image">
+            <img src={Silica} alt="room" />
+            <div className="room__card__icons">
+              <span><i className="ri-heart-fill"></i></span>
+              <span><i className="ri-paint-fill"></i></span>
+              <span><i className="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div className="room__card__details">
+            <h4>Silica Sand</h4>
+            <p>Silica is chemically inert, resistant and does not react with many substances</p>
+            
+            <a href='./Silicasand'><button className="btn"> Read More</button></a>
+
+          </div>
+        </motion.div>
+       
       </motion.div>
     </motion.section>
   );

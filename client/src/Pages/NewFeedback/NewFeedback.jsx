@@ -281,7 +281,7 @@ const FeedbackForm = () => {
     <main>
       <div className="hero">
         <div className="FeedImg">
-      
+     
         </div>
 
         <motion.div
@@ -293,14 +293,16 @@ const FeedbackForm = () => {
           <h3>Give Feedback</h3>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label>What do you think of the issue search experience within Jira projects?</label>
+              <label>What do you think of the issue search experience with SFI Products?</label>
               <div className="rating-group">
                 {[
-                  { label: "Terrible", icon: <FaAngry /> },
-                  { label: "Bad", icon: <FaFrown /> },
-                  { label: "Okay", icon: <FaMeh /> },
-                  { label: "Good", icon: <FaSmile /> },
                   { label: "Amazing", icon: <FaGrin /> },
+                  { label: "Good", icon: <FaSmile /> },
+                  { label: "Okay", icon: <FaMeh /> },
+                  { label: "Bad", icon: <FaFrown /> },
+                  { label: "Terrible", icon: <FaAngry /> },
+                 
+    
                 ].map((option, index) => (
                   <label key={index} className="rating-label">
                     <input
@@ -334,8 +336,9 @@ const FeedbackForm = () => {
                   name="research-group"
                   checked={researchGroup}
                   onChange={() => setResearchGroup(!researchGroup)}
+                 
                 />
-                I'd like to help improve by joining the <a href="/">Research Group.</a>
+               <span className="ml-2">I'd like to help improve by joining the <a href="/">Research Group.</a></span> 
               </label>
             </div>
             <div className="form-group">

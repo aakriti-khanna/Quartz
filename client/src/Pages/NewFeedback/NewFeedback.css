@@ -1,25 +1,34 @@
 /* Apply a blue-grey background to the main container */
-.hero{
- 
+.hero {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* height: 100vh; */
-  /* background: linear-gradient(135deg, #3a6073, #16222a); */
-width: 100%;
+  width: 100%;
   font-family: 'Arial', sans-serif;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-.FeedImg{
- 
-  background-image: url('../../assets/gall18.jpg');
+.FeedImg {
+  background-image: url('../../assets/NewFeedb.png');
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width:30%;
-
+  height: 300px;
+  width: 30%;
+  border-radius: 10px;
+  animation: pulse 2s infinite ease-in-out;
 }
+
 /* Style the card with a gradient background, rounded corners, and shadow */
 .card {
   background: linear-gradient(135deg, #fffafa, #f0f4f8);
@@ -27,22 +36,20 @@ width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   width: 40%;
-  /* max-width: 600px; */
-  /* height: 88vh; */
   margin-top: 15px;
-  margin-bottom: 10px   ;
-
+  margin-bottom: 10px;
 }
 
 h3 {
-  color:#071a53;
+  color: #071a53;
   margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   font-size: x-large;
 }
-h3:hover{
-  color:   #02a8f0;
+
+h3:hover {
+  color: #02a8f0;
 }
 
 .form-group {
@@ -120,7 +127,8 @@ textarea:focus {
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
 }
 
-.submit-button, .cancel-button {
+.submit-button,
+.cancel-button {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -158,109 +166,52 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
-
-
 /* Media Queries for Responsiveness */
 @media (max-width: 991px) {
-  /* Styles for screens up to 991px */
-  .container {
-      flex-direction: column;
+  .hero {
+    flex-direction: column;
   }
 
-  .container .contactInfo {
-      width: 100%;
-      height: auto;
-  }
-
-  .container .contactForm {
-      width: 100%;
-      height: auto;
-      padding-left: 0;
-      margin-left: 0;
-      margin-top: 20px;
-  }
-
-  .container .contactInfo ul.info li,
-  .container .contactInfo ul.sci li {
-      margin-right: 0;
-      margin-bottom: 15px;
-  }
-
-  .container .contactInfo ul.sci {
-      justify-content: center;
+  .card {
+    width: 90%;
   }
 }
 
 @media (max-width: 600px) {
-  /* Styles for screens up to 600px */
-  main{
-    height: fit-content;
-  }
-  .hero{
+  .hero {
     flex-direction: column;
-    margin-top: 350px;
-    /* background-color: green;  */
-  }
-  .container .contactInfo,
-  .container .contactForm {
-      padding: 15px;
+    margin-top: 20px;
   }
 
-  .container .contactInfo ul.sci {
-      margin-top: 20px;
+  .FeedImg {
+    display: none;
   }
 
-  .container .contactForm .formBox .inputBox {
-      margin-bottom: 20px;
+  .card {
+    width: 90%;
   }
-  .faq-section{
+
+  .faq-section {
     width: 100%;
   }
 }
 
 @media (max-width: 440px) {
-  /* Styles for screens up to 440px */
-  main {
-      padding: 10px;
-  }
-
-  .faq-section,
   .card {
-      width: 100%;
-      padding: 15px;
-      margin-right: 0;
+    width: 100%;
+    padding: 15px;
   }
 
   .rating-label svg {
-      width: 25px;
-      height: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   textarea {
-      height: 150px;
+    height: 150px;
   }
 
-  .container {
-      flex-direction: column;
-  }
-
-  .faq-section {
-      margin-top: 20px;
-  }
-
-  .faq-section,
-  .contactForm {
-      padding: 10px;
-  }
-
-  .faq-section h3,
-  .contactForm h2 {
-      font-size: 20px;
-  }
-
-  .faq-section ul {
-      padding-left: 20px;
+  h3 {
+    font-size: 20px;
   }
 }

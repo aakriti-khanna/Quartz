@@ -47,6 +47,29 @@ const Home = () => {
         <FAQ />
       </div>
 
+
+      <div className="map">
+        <motion.div
+          className="map"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.423766780158!2d73.20021277210073!3d22.33762249661043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf2296e2134d%3A0xeee6cdcb2b3ea73b!2s1%2C%20Sama-Savli%20Rd%2C%20BSNL%20Colony%2C%20Karelibagh%2C%20Vadodara%2C%20Gujarat%20390002!5e0!3m2!1sen!2sin!4v1716277964087!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            frameBorder="0"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps"
+          ></iframe>
+        </motion.div>
+      </div>
+
     </div>
     </>
   );

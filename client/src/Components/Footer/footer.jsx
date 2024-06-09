@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   RiYoutubeFill,
@@ -11,24 +9,25 @@ import {
   RiMapPin2Fill,
 } from "react-icons/ri";
 import "./footer.css"; // Import CSS for styling
+import mainL from "../../assets/mainlogo1.png"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="section__container2 footer__container">
         <div className="footer__col">
-          <div className="logo footer__logo">
-            <div>H</div>
-            <span>
-              HOTEL
-              <br />
-              MIRANDA
-            </span>
+          <div className="mainlogo footer__logo">
+           <img src={mainL}  /> 
+           
+          
           </div>
+         
+         
           <p className="section__description1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            laudantium unde. Doloremque eaque debitis laborum labore voluptates
-            iste molestiae consectetur.
+            Silica Floor Industries is your trusted partner for high-quality
+            minerals that cater to various industries. With our commitment to
+            quality, innovation, and customer satisfaction, along with our
+            advanced manufacturing unit, access to high-quality raw materials,
           </p>
           <ul className="footer__socials">
             <li>
@@ -54,25 +53,25 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__col">
-          <h3 className="py-2 text-white">Services</h3>
+          <h3 className="py-2 text-white">Quick Links</h3>
           <div className="footer__links">
             <li>
-              <a href="#">Online Booking</a>
+              <a href="./">Home</a>
             </li>
             <li>
-              <a href="#">Room Customization</a>
+              <a href="./About">About</a>
             </li>
             <li>
-              <a href="#">Virtual Tours</a>
+              <a href="./Silicasand">Product</a>
             </li>
             <li>
-              <a href="#">Special Offers</a>
+              <a href="./Mining">Operations</a>
             </li>
             <li>
-              <a href="#">Concierge Services</a>
+              <a href="./Contact">Contact</a>
             </li>
             <li>
-              <a href="#">Customer Support</a>
+              <a href="./NewFeed">Feedback</a>
             </li>
           </div>
         </div>
@@ -83,7 +82,7 @@ const Footer = () => {
               <span>
                 <RiPhoneFill />
               </span>
-              <div >
+              <div>
                 <h5>Phone No</h5>
 
                 <p>+91 9876543210</p>
@@ -93,25 +92,30 @@ const Footer = () => {
               <span>
                 <RiRecordMailLine />
               </span>
-              <div >
-                <h5>Email</h5>
-                <p>info@hotelmiranda.com</p>
+              <div>
+                <h5>Email </h5>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmqsCJFXVMwslkgkXGbfhjtKjXtnCFfJWRZqRPQMKmnqtwmLgtBgkFkmrCmdwXpkgXWqq">
+                  <p>silicafloor21@gmail.com</p>
+                </a>
               </div>
             </li>
-            <li className="flex" >
+            <li className="flex">
               <span>
                 <RiMapPin2Fill />
               </span>
               <div>
                 <h5>Location</h5>
-                <p>First St. NYC</p>
+                <a href="https://www.google.com/maps/place/1,+Sama-Savli+Rd,+BSNL+Colony,+Karelibagh,+Vadodara,+Gujarat+390002/@22.3388758,73.2018648,18z/data=!4m6!3m5!1s0x395fcf2296e2134d:0xeee6cdcb2b3ea73b!8m2!3d22.3376241!4d73.2048336!16s%2Fg%2F11jyyrc7_h?hl=en&entry=ttu"><p>
+                  204, Siddharth Annex-1 Sama Savli Road Near M.S. School
+                  Vadodara-390008 Gujarat.
+                </p></a>
               </div>
             </li>
           </div>
         </div>
       </div>
       <div className="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2023 Web Design Mastery. All rights reserved.|| Made By SOFTAPPER
       </div>
     </footer>
   );

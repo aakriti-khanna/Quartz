@@ -396,9 +396,72 @@
 
 
 
+// import React, { useState } from 'react';
+// import './Nav.css';
+// import logo from "../assets/mainlogo1.png";
+
+// const Nav = () => {
+//   const [isNavOpen, setIsNavOpen] = useState(false);
+
+//   const toggleNav = () => {
+//     console.log("hello");
+//     setIsNavOpen(!isNavOpen);
+//   };
+
+//   return (
+//     <header>
+//       <nav>
+//         <div className="logo">
+//           <img src={logo} alt="Logo" />
+//         </div>
+//         <span className='text-white'>
+//             <h1 className='text-xl'> Silica Floor Industries</h1>
+             
+//               <h4 className='text-sm'>A Steps Towards Quality</h4>
+//             </span>
+       
+//         <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''} z-10 text-lg`} >
+//           <li><a href="./">Home</a></li>
+//           <li><a href="./About">About</a></li>
+
+//           <li className="dropdown">
+//             <a href="#">Products</a>
+//             <div className="dropdown-content">
+//               <a href="/Silicasand">Silica </a>
+//               <a href="./Quartz">Quartz</a>
+            
+//             </div>
+//           </li>
+//           <li className="dropdown">
+//             <a href="#">Operations</a>
+//             <div className="dropdown-content">
+//               <a href="./Mining">Mining</a>
+//               <a href="./Processing">Processing</a>
+//               <a href="./Quality">Quality Check</a>
+//             </div>
+//           </li>
+//           <li><a href="./Gallery">Gallery</a></li>
+//           <li><a href="./Contact">Contact</a></li>
+        
+//           <li><a href="./NewFeed">Feedback</a></li>
+        
+
+//         </ul>
+//         <div className="hamburger" onClick={toggleNav}>
+//           <div></div>
+//           <div></div>
+//           <div></div>
+//         </div>
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default Nav;
 import React, { useState } from 'react';
 import './Nav.css';
-import logo from "../assets/Mainlogo.png";
+import logo from "../assets/mainlogo1.png";
+import { FaHome, FaInfoCircle, FaBox, FaCog, FaImages, FaPhone, FaComments } from 'react-icons/fa';
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -414,31 +477,32 @@ const Nav = () => {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''}`}>
-          <li><a href="./">Home</a></li>
+        <span className='text-white'>
+          <h1 className='text-xl'> Silica Floor Industries</h1>
+          <h4 className='text-sm'>A Steps Towards Quality</h4>
+        </span>
+
+        <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''} z-10 text-lg`}>
+          <li><a href="./"><FaHome /><span>Home</span></a></li>
+          <li><a href="./About"><FaInfoCircle /><span>About</span></a></li>
           <li className="dropdown">
-            <a href="#">Products</a>
+            <a href="#"><FaBox /><span>Products</span></a>
             <div className="dropdown-content">
-              <a href="/Silicasand">Silica </a>
+              <a href="/Silicasand">Silica</a>
               <a href="./Quartz">Quartz</a>
-              <a href="#">Product 3</a>
             </div>
           </li>
           <li className="dropdown">
-            <a href="#">Operations</a>
+            <a href="#"><FaCog /><span>Operations</span></a>
             <div className="dropdown-content">
               <a href="./Mining">Mining</a>
               <a href="./Processing">Processing</a>
               <a href="./Quality">Quality Check</a>
             </div>
           </li>
-          <li><a href="./Gallery">Gallery</a></li>
-          <li><a href="./About">About</a></li>
-          <li><a href="./Contact">Contact</a></li>
-        
-          <li><a href="./NewFeed">Feedback</a></li>
-        
-
+          <li><a href="./Gallery"><FaImages /><span>Gallery</span></a></li>
+          <li><a href="./Contact"><FaPhone /><span>Contact</span></a></li>
+          <li><a href="./NewFeed"><FaComments /><span>Feedback</span></a></li>
         </ul>
         <div className="hamburger" onClick={toggleNav}>
           <div></div>

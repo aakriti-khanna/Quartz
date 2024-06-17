@@ -46,7 +46,7 @@ const Silica = () => {
             Our Products
           </h1>
         </div>
-        <div className="Quartz-B">
+        <div className=" Quartz-B hidden lg:block">
           <PostCarousel />
         </div>
       </div>
@@ -85,7 +85,7 @@ const Silica = () => {
           {" "}
           <img src={QuartzImage} alt="Quartz" />
         </div>
-        <div className="pt-8 pl-24 ml-10">
+        <div className="pt-8 md:pl-24 md:ml-10 ">
         <h3>Applications of Quartz</h3>
           <ul className="applications-list leading-loose">
             <li>Ceramics: Quartz is used in the manufacturing of ceramicsto improve itsstrength and durability.</li>

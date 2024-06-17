@@ -1,8 +1,16 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.QuartzMain{
-    background-color: #f0f0f0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+.QuartzMain {
+    background-color: #f0f0f0;
+}
 
 .sec__container {
     display: flex;
@@ -10,236 +18,303 @@
     align-items: center;
     padding: 50px;
     margin-bottom: 40px;
-  }
-  
-  .Quartz__image {
+}
+
+.Quartz__image {
     flex: 1;
     margin-right: 20px;
-   
+}
 
-  }
-  
-  .Quartz__image img {
-   width: 82%;
+.Quartz__image img {
+    width: 82%;
     height: 30%;
     border-radius: 22px;
     background-size: contain;
-  }
-  
-  .Quartz__content {
+}
+
+.Quartz__content {
     flex: 1;
     max-width: 600px;
-  }
-  
-  .Quartz__subheader {
+}
+
+.Quartz__subheader {
     font-size: 56px;
     font-weight: bold;
     color: #1442a6;
     margin-bottom: 10px;
-  }
-  
-  .Quartz__header {
+}
+
+.Quartz__header {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .Quartz__description {
+}
+
+.Quartz__description {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
-  }
-  .QuartzApplication{
+}
+
+.QuartzApplication {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
     margin-bottom: 40px;
-  }
-
-
-  /* Quartz.css */
-
-
-.chemical-specs {
-  margin-top: 40px;
-  text-align: center;
-  background:#f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
-  transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
 }
 
-
+/* Chemical Specs */
+.chemical-specs {
+    margin-top: 40px;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
 
 .chemical-formula-table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.3s; */
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
 }
 
 .chemical-formula-table th, .chemical-formula-table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: left;
-  /* transition: background-color 0.3s, color 0.3s; */
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
 .chemical-formula-table th {
-  background-color: #678595;
-  color: white;
+    background-color: #678595;
+    color: white;
 }
 
 .chemical-formula-table tr {
-  background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .chemical-formula-table tr:hover {
-  background-color: #e9e9e9;
-  transform: scale(1.02);
+    background-color: #e9e9e9;
+    transform: scale(1.02);
 }
 
 .chemical-formula-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
-/* Applications.css */
+/* Applications */
 .applications {
-  margin-top: 40px;
-  text-align: center;
-  padding: 20px;
-  background: #f0f0f0;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s; */
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
 }
-
-
 
 .applications h3 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
 }
 
 .applications h3::after {
-  content: '';
-  width: 50%;
-  height: 3px;
-  background: #4c4eaf;
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-  border-radius: 2px;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: #4c4eaf;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 .applications-list {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0 auto;
-  text-align: left;
-  max-width: 600px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 600px;
 }
 
 .applications-list li {
-  font-size: 1rem;
-  color: #555;
-  padding: 5px 0;
-  transition: color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    color: #555;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .applications-list li::before {
-  color: #4CAF50;
-  margin-right: 10px;
+    color: #4CAF50;
+    margin-right: 10px;
 }
 
 .applications-list li:hover {
-  color: #333;
-  transform: translateX(5px);
+    color: #333;
+    transform: translateX(5px);
 }
 
 .custom-table {
-  width: 100%;
-  border-collapse: collapse;
- 
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .table-header {
-  background-color: #688796;
-  font-weight: 500;
-  font-size: larger;
-  color: white;
+    background-color: #688796;
+    font-weight: 500;
+    font-size: larger;
+    color: white;
 }
 
 .table-row:nth-child(even) {
-  background-color: #edf2f7;
+    background-color: #edf2f7;
 }
 
 .table-row:hover {
-  background-color: #d1d5db;
+    background-color: #d1d5db;
 }
 
-.custom-table th,
-.custom-table td {
-  padding: 12px;
-  border: 1px solid #e5e7eb;
+.custom-table th, .custom-table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
 }
 
+/* Quality Assurance */
 .quality-assurance-container {
-  padding: 20px;
-  /* margin: 20px auto; */
-  border-radius: 10px;
- 
-  /* max-width: 800px; */
-  font-family: 'Arial', sans-serif;
-  transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
-
-
 
 .title {
-  color: #2c3e50;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
- 
-  position: relative;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 .title::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
 }
 
 .title:hover::before {
-  visibility: visible;
-  width: 100%;
+    visibility: visible;
+    width: 100%;
 }
 
 .title:hover {
-  color: #1a73e8;
-  transform: translateY(-5px);
+    color: #1a73e8;
+    transform: translateY(-5px);
 }
 
 .description {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 10px;
-  border-radius: 5px;
-
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    .sec__container,
+    .QuartzApplication {
+        flex-direction: column;
+        padding: 30px;
+    }
 
+    .Quartz__image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .Quartz__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec__container,
+    .QuartzApplication {
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .Quartz__image img {
+        display: none;
+    }
+
+    .applications .img {
+        display: none;
+    }
+
+    .applications {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Quartz__subheader {
+        font-size: 36px;
+    }
+
+    .Quartz__header {
+        font-size: 18px;
+    }
+
+    .Quartz__description {
+        font-size: 14px;
+    }
+
+    .chemical-formula-table {
+        width: 100%;
+    }
+
+    .applications h3 {
+        font-size: 1.5rem;
+    }
+
+    .applications-list li {
+        font-size: 0.9rem;
+    }
+
+    .applications .img {
+        display: none;
+    }
+
+    .applications {
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

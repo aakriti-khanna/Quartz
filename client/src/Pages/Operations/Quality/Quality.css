@@ -168,3 +168,68 @@
     text-align: center;
     animation: fadeInUp 1s ease-out; /* Apply animation */
   }
+
+   /* For screens smaller than 768px (typical phones) */
+@media (max-width: 767px) {
+  .head0 {
+    font-size: 3rem;
+  }
+  .head1 {
+    font-size: 1.5rem;
+  }
+  .Mining__image img {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not exceed container */
+    display: none;
+  }
+}
+
+/* For screens between 768px and 991px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .head0 {
+    font-size: 4rem;
+  }
+  .head1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screens between 992px and 1199px (small desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .head0 {
+    font-size: 4.5rem;
+  }
+  .head1 {
+    font-size: 2rem;
+  }
+}
+
+/* For screens larger than 1200px (standard desktops) */
+@media (min-width: 1200px) {
+  .head0 {
+    font-size: 5rem;
+  }
+  .head1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 767px) {
+  .sec__container {
+    flex-direction: column;
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+  .Mining__image {
+    /* margin-right: 0;
+    margin-bottom: 20px; Add margin bottom for better spacing */
+    display: none;
+  }
+  .bullet-points-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .quality-heading {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+}

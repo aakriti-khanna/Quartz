@@ -116,13 +116,10 @@ const Labout = () => {
         <p className="section__subheader">ABOUT US</p>
         <h2 className="section__header">The Best Holidays Start Here!</h2>
         <p className="section__description">
-          With a focus on quality accommodations, personalized experiences, and
-          seamless booking, our platform is dedicated to ensuring that every
-          traveler embarks on their dream holiday with confidence and
-          excitement.
+       
         </p>
         <div className="about__btn">
-          <button className="btn">Read More</button>
+          <a href='/About'><button className="btn">Read More</button></a>
         </div>
       </motion.div>
     </div>

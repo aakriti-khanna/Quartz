@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* style.css or any other CSS file */
-.Min-img {
-    background-image: url("../../../assets/Processing.jpg");
-
+.Mini-img {
+    background-image: url("../../../assets/Mining.jpg");
     height: 400px;
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
@@ -22,22 +20,22 @@
     justify-content: center;
     align-items: center;
     position: relative;
-  }
-  
-  .head0 {
+}
+
+.head0 {
     color: white;
     font-size: 5rem; /* Adjust as needed */
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
     transition: color 0.3s ease;
-  }
-  
-  .head0:hover {
+}
+
+.head0:hover {
     color: #f0e68c; /* Change color on hover */
-  }
-  
-  .head1 {
+}
+
+.head1 {
     color: white;
     font-size: 2rem; /* Adjust as needed */
     font-weight: bold;
@@ -45,23 +43,22 @@
     opacity: 0; /* Initially hidden */
     transform: translateY(20px); /* Initial position for slide-up effect */
     animation: fadeInUp 2s forwards; /* Triggers the animation */
-  }
-  
-  /* Fade-in and slide-up animation */
-  @keyframes fadeInUp {
+}
+
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
     0% {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
 
-.Min-img{
-    background-image: url("../../../assets/galler16.jpg");
+.Mini-img {
+    background-image: url("../../../assets/Mining.jpg");
     height: 400px;
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
@@ -69,15 +66,9 @@
     width: 100%;
 }
 
-
-
-.QuartzMain{
+.QuartzMain {
     background-color: #f0f0f0;
 }
-
-
-
-
 
 .sec__container {
     display: flex;
@@ -85,87 +76,283 @@
     align-items: center;
     padding: 50px;
     margin-bottom: 40px;
-  }
-  
-  .Mining__image {
+}
+
+.Mining__image {
     flex: 1;
     margin-right: 20px;
-   
+}
 
-  }
-  
-  .Mining__image img {
-   width: 85%;
-    height: 457px;
+.Mining__image img {
+    width: 82%;
+    height: 30%;
     border-radius: 22px;
     background-size: contain;
-    margin-bottom: 40px;
-  }
-  
-  .Mining__content {
+}
+
+.Mining__content {
     flex: 1;
     max-width: 600px;
-  }
-  
-  .Mining__subheader {
+}
+
+.Mining__subheader {
     font-size: 56px;
     font-weight: bold;
     color: #1442a6;
     margin-bottom: 10px;
-  }
-  
-  .Mining__header {
+}
+
+.Mining__header {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .Mining__description {
+}
+
+.Mining__description {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
-  }
+}
 
-
-  
 .bullet-points-container {
     color: black;
-    background-color:rgb(217, 238, 248);
+    background-color: rgb(217, 238, 248);
     padding: 30px;
     border-radius: 10px;
     margin-top: 20px;
-   align-items: center;
+    align-items: center;
     width: 100%;
     /* max-width: 800px; */
     margin-bottom: 15px;
-  }
-  
-  .bullet-points-container ul {
+}
+
+.bullet-points-container ul {
     list-style: disc;
     padding-left: 20px;
-  }
-  
-  .bullet-point {
+}
+
+.bullet-point {
     margin-bottom: 10px;
     font-size: 1rem;
     line-height: 1.8;
     position: relative;
-  }
-  
-  .bullet-point::before {
+}
+
+.bullet-point::before {
     content: '✔';
     color: rgb(27, 11, 195);
     position: absolute;
     left: -25px;
     top: 0;
-  }
- 
-  
-  .quality-heading {
-    color:#1442a6;
+}
+
+.quality-heading {
+    color: #1442a6;
     font-size: 2.5rem; /* Adjust as needed */
     font-weight: bold;
     margin-top: 20px;
     text-align: center;
     animation: fadeInUp 1s ease-out; /* Apply animation */
+}
+
+/* For screens smaller than 768px (typical phones) */
+@media (max-width: 767px) {
+    .head0 {
+        font-size: 3rem;
+    }
+
+    .head1 {
+        font-size: 1.5rem;
+    }
+
+    .Mining__image img {
+        width: 100%; /* Adjust width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Ensure image does not exceed container */
+        display: none;
+    }
+
+    .sec__container {
+        flex-direction: column;
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .Mining__image {
+        /* margin-right: 0;
+        margin-bottom: 20px; Add margin bottom for better spacing */
+        display: none;
+    }
+
+    .bullet-points-container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .bullet-points-container ul {
+        padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .bullet-point {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .quality-heading {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .Mining__subheader {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .Mining__header {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .Mining__description {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* For screens between 768px and 991px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .head0 {
+        font-size: 4rem;
+    }
+
+    .head1 {
+        font-size: 1.8rem;
+    }
+
+    .Mining__subheader {
+        font-size: 3rem; /* Adjust font size for tablets */
+    }
+
+    .Mining__header {
+        font-size: 2rem; /* Adjust font size for tablets */
+    }
+
+    .Mining__description {
+        font-size: 1.2rem; /* Adjust font size for tablets */
+    }
+
+    .bullet-point {
+        font-size: 0.95rem; /* Adjust font size for tablets */
+    }
+}
+
+/* For screens between 992px and 1199px (small desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .head0 {
+        font-size: 4.5rem;
+    }
+
+    .head1 {
+        font-size: 2rem;
+    }
+
+    .Mining__subheader {
+        font-size: 3.5rem; /* Adjust font size for small desktops */
+    }
+
+    .Mining__header {
+        font-size: 2.2rem; /* Adjust font size for small desktops */
+    }
+
+    .Mining__description {
+        font-size: 1.4rem; /* Adjust font size for small desktops */
+    }
+
+    .bullet-point {
+        font-size: 1rem; /* Adjust font size for small desktops */
+    }
+}
+
+/* For screens larger than 1200px (standard desktops) */
+@media (min-width: 1200px) {
+    .head0 {
+        font-size: 5rem;
+    }
+
+    .head1 {
+        font-size: 2.5rem;
+    }
+
+    .Mining__subheader {
+        font-size: 4rem; /* Adjust font size for standard desktops */
+    }
+
+    .Mining__header {
+        font-size: 2.5rem; /* Adjust font size for standard desktops */
+    }
+
+    .Mining__description {
+        font-size: 1.1rem; /* Adjust font size for standard desktops */
+    }
+
+    .bullet-point {
+        font-size: 1.1rem; /* Adjust font size for standard desktops */
+    }
+}
+ /* For screens smaller than 768px (typical phones) */
+ @media (max-width: 767px) {
+  .head0 {
+    font-size: 3rem;
   }
+  .head1 {
+    font-size: 1.5rem;
+  }
+  .Mining__image img {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not exceed container */
+    display: none;
+  }
+}
+
+/* For screens between 768px and 991px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .head0 {
+    font-size: 4rem;
+  }
+  .head1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* For screens between 992px and 1199px (small desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .head0 {
+    font-size: 4.5rem;
+  }
+  .head1 {
+    font-size: 2rem;
+  }
+}
+
+/* For screens larger than 1200px (standard desktops) */
+@media (min-width: 1200px) {
+  .head0 {
+    font-size: 5rem;
+  }
+  .head1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 767px) {
+  .sec__container {
+    flex-direction: column;
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+  .Mining__image {
+    /* margin-right: 0;
+    margin-bottom: 20px; Add margin bottom for better spacing */
+    display: none;
+  }
+  .bullet-points-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .quality-heading {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+}

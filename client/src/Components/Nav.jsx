@@ -461,7 +461,8 @@
 import React, { useState } from 'react';
 import './Nav.css';
 import logo from "../assets/mainlogo1.png";
-import { FaHome, FaInfoCircle, FaBox, FaCog, FaImages, FaPhone, FaComments } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaBox, FaCog, FaImages,  FaComments  } from 'react-icons/fa';
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -501,7 +502,7 @@ const Nav = () => {
             </div>
           </li>
           <li><a href="./Gallery"><FaImages /><span>Gallery</span></a></li>
-          <li><a href="./Contact"><FaPhone /><span>Contact</span></a></li>
+          <li><a href="./Contact"><BsFillTelephoneFill /><span>Contact</span></a></li>
           <li><a href="./NewFeed"><FaComments /><span>Feedback</span></a></li>
         </ul>
         <div className="hamburger" onClick={toggleNav}>

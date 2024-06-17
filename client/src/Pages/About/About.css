@@ -27,7 +27,6 @@
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Add shadow for depth */
 /* } */
 /* GalleryP.css */
-
 .Gall {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@
 .Gall1 {
   margin-bottom: 20px;
   text-align: center;
-  /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
   background: rgb(238, 236, 236);
   padding: 20px;
   border-radius: 10px;
@@ -47,18 +45,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
-  
 }
 
 .Gall1 h1 {
-  font-size: 10em;
-  color:  #182583;
+  font-size: 10rem; /* Default font size for larger screens */
+  color: #182583;
   margin: 0;
   position: relative;
   display: inline-block;
   animation: fadeInText 2s ease-in-out;
-  /* background-image:url(../../assets/Q1.jpg); */
   background-size: cover;
   width: 100%;
 }
@@ -70,28 +65,30 @@
   height: 20px; /* Adjust the height as needed */
   margin: 20px 0;
 }
-.lines div{
-  margin: 0 0.5rem;
 
+.lines div {
+  margin: 0 0.5rem;
 }
+
 .lines div:nth-child(1),
-.lines div:nth-child(3){
+.lines div:nth-child(3) {
   height: 3px;
   width: 200px;
   background: #928e8f;
   border-radius: 5px;
 }
-.lines{
+
+.lines {
   display: flex;
   align-items: center;
 }
-.lines div:nth-child(2){
+
+.lines div:nth-child(2) {
   width: 10px;
   height: 10px;
   background: #4545aa;
   border-radius: 50%;
 }
-
 
 @keyframes fadeInText {
   0% {
@@ -116,15 +113,62 @@
   }
 }
 
+/* Media queries for adjusting font size based on precise viewport widths */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+
+@media (max-width: 1200px) {
+  .Gall1 h1 {
+    font-size: 3.5rem; /* Adjusted font size for medium to large screens */
   }
 }
+
+@media (max-width: 991px) {
+  .Gall1 h1 {
+    font-size: 2.5rem; /* Adjusted font size for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .Gall1 h1 {
+    font-size: 2rem; /* Adjusted font size for tablets and smaller screens */
+  }
+
+  .lines {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lines div:nth-child(1),
+  .lines div:nth-child(3) {
+    width: 80px; /* Adjusted width for smaller screens */
+  }
+
+  .lines div:nth-child(2) {
+    width: 5px; /* Adjusted size for smaller screens */
+    height: 5px;
+  }
+}
+
+/* Specifically for iPhone 14 Pro Max and similar devices */
+@media (max-width: 430px) {
+  .Gall1 h1 {
+    font-size: 1.8rem; /* Adjusted font size for iPhone 14 Pro Max */
+  }
+
+  .lines {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lines div:nth-child(1),
+  .lines div:nth-child(3) {
+    width: 60px; /* Adjusted width for iPhone 14 Pro Max */
+  }
+
+  .lines div:nth-child(2) {
+    width: 5px; /* Adjusted size for iPhone 14 Pro Max */
+    height: 5px;
+  }
+}
+
 
 .Heading {
   color: white; /* White text color */

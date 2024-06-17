@@ -1,7 +1,7 @@
 import React from "react";
 import "./Quartz.css";
 import QuartzImage from "../../../assets/CrystalQuartz.jpg";
-import PostCarousel from "../../../Components/PostCarousel/PostCarousel.jsx";
+import QuartzCarousel from "../../../Components/QuartzCarousel/QuartzCarousel.jsx";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,7 +12,7 @@ import image3 from '../../../assets/Silica.jpg';
 import image4 from '../../../assets/Silica4.jpeg';
 import image5 from '../../../assets/silica1.jpeg';
 import image6 from '../../../assets/silica2.jpeg';
-import "./Quartz.css"; // Import the CSS file
+
 const Quartz = () => {
   const handleScroll = () => {
     const elements = document.querySelectorAll(".animate-on-scroll");
@@ -55,7 +55,7 @@ const Quartz = () => {
         </div>
       </div>
       <div className="Quartz-products">
-        
+        <QuartzCarousel />
       </div>
 
       <div className="chemical-specs ">

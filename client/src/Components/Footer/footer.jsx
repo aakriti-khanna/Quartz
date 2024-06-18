@@ -78,7 +78,7 @@ const Footer = () => {
             <span>
               <RiPhoneFill />
             </span>
-            <div >
+            <div>
               <h5 className="ml-4">Phone No</h5>
             <a href="#"><p>+91 9876543210</p></a>  
             </div>

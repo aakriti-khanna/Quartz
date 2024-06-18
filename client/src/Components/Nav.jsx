@@ -480,7 +480,7 @@ const Nav = () => {
         </div>
         <span className='text-white navDescription'>
           <h1 className='text-xl'> Silica Floor Industries</h1>
-          <h4 className='text-sm'>A Steps Towards Quality</h4>
+          <h4 className='text-sm'>A Step Towards Quality</h4>
         </span>
 
         <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''} z-10 text-lg`}>

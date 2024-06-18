@@ -9,24 +9,24 @@ header {
   padding: 10px 40px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  height:74px;
 }
 
 .logo {
-  padding: 5px;
   display: flex;
   align-items: center;
-  width: 120px;
-  height: 60px;
 }
 
 .logo img {
+  width: 120px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -43,10 +43,6 @@ nav {
 
 .nav-links li {
   position: relative;
-}
-
-.nav-links li span {
-  margin-left: 8px;
 }
 
 .nav-links a {
@@ -73,7 +69,7 @@ nav {
   z-index: 1;
   border-radius: 5px;
   overflow: hidden;
-  top: 100%; /* Position below the dropdown button */
+  top: 100%;
   left: 0;
 }
 
@@ -112,7 +108,7 @@ nav {
   transform: rotate(5deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -120,7 +116,7 @@ nav {
     text-align: center;
     background-color: #162332;
     position: absolute;
-    top: 60px; /* Position below the header */
+    top: 90px; /* Position below the header */
     left: 0;
     transform: translateY(-100%);
     transition: transform 0.5s ease-in-out;
@@ -132,7 +128,7 @@ nav {
   }
 
   .nav-links li {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 
   .dropdown-content {
@@ -143,6 +139,57 @@ nav {
 
   .hamburger {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    top: 90px; /* Adjust the position below the header */
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    top: 90px; /* Adjust the position below the header */
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    padding: 5px 10px;
+  }
+
+  .nav-links {
+    top: 45px; /* Adjust the position below the header */
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+  }
+
+   nav  span .navDescription {
+    display: none;
+    color:black
+  }
+  .hamburger div {
+    width: 25px;
+    height: 3px;
   }
 }
 

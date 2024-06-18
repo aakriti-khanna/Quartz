@@ -1,62 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #3933a9;
+  --primary-color-dark: #2c41a1ea;
+  --secondary-color: #001f3f;
+  --accent-color: #0052cc;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --text-muted: #5a6473;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --bg-blue: #e0f7fa;
+  --bg-grey: #eceff1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .section__container.banner__container {
-    padding: 4rem 0;
-  }
-  
+  padding: 4rem 1rem;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
   .banner__content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
   }
-  
-  /* .banner__card {
-    text-align: center;
-    flex: 1;
-    padding: 2rem;
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  } */
-  
-  .banner__card:hover {
-    transform: translateY(-5px);
+}
+
+.banner__card {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px; /* Fixed height for uniform size */
+}
+
+@media (min-width: 768px) {
+  .banner__card {
+    margin: 1rem;
   }
-  
+}
+
+.banner__card:hover {
+  transform: translateY(-5px);
+}
+
+.banner__card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background-color: #a0d0f6;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(5px);
+}
+
+.banner__card h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.banner__card p {
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
   .banner__card h4 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--text-dark);
-  }
-  
-  .banner__card p {
-    color: var(--text-light);
-    margin-top: 1rem;
+    font-size: 1.5rem;
   }
 
-  .banner__card {
-    position: relative; /* Add this to make positioning the shadow easier */
-    text-align: center;
-    flex: 1;
-    padding: 2rem;
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+  .banner__card p {
+    font-size: 1rem;
   }
-  
-  /* Add a pseudo-element for the shadow */
-  .banner__card::after {
-    content: "";
-    position: absolute;
-    bottom: -10px; /* Adjust this value to control the distance of the shadow */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 10px; /* Adjust the height of the shadow */
-    background-color: #a0d0f6; /* Light blue color */
-    border-radius: 50%;
-    z-index: -1; /* Ensure the shadow is behind the card */
-    opacity: 0.7; /* Adjust the opacity of the shadow */
-    filter: blur(5px); /* Add a blur effect to the shadow */
+
+  .section__container.banner__container {
+    padding: 2rem 1rem;
   }
-  
+}
+
+/* Additional adjustments for larger screens */
+@media (min-width: 1200px) {
+  .banner__card h4 {
+    font-size: 2.5rem;
+  }
+
+  .banner__card p {
+    font-size: 1.25rem;
+  }
+
+  .section__container.banner__container {
+    padding: 6rem 2rem;
+  }
+}

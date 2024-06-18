@@ -194,3 +194,59 @@
     font-size: 0.6rem;
   }
 }
+
+/* Aligning Contact Us in the same div */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.footer__contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__contact p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.footer__contact a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__contact a:hover {
+  color: #ff6347;
+}
+
+@media (max-width: 991px) {
+  .footer__contact {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__contact h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer__contact p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer__contact h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer__contact p {
+    font-size: 0.8rem;
+  }
+}

@@ -478,7 +478,7 @@ const Nav = () => {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <span className='text-white'>
+        <span className='text-white navDescription'>
           <h1 className='text-xl'> Silica Floor Industries</h1>
           <h4 className='text-sm'>A Steps Towards Quality</h4>
         </span>

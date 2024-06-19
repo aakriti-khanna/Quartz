@@ -233,12 +233,16 @@
         flex-direction: column;
         padding: 30px;
     }
+    .Quartz-products .Quartz-A h1{
+      display: none;
+  
+    }
 
     .Quartz__image {
         margin-right: 0;
         margin-bottom: 20px;
     }
-
+   
     .Quartz__image img {
         width: 100%;
         height: auto;
@@ -259,6 +263,10 @@
         width: 90%;
     }
 
+    .Quartz-products .Quartz-A h1{
+      display: none;
+  
+    }
     .Quartz__image img {
         display: none;
     }
@@ -290,6 +298,10 @@
         font-size: 14px;
     }
 
+    .Quartz-products .Quartz-A h1{
+      display: none;
+  
+    }
     .chemical-formula-table {
         width: 100%;
     }
@@ -317,4 +329,62 @@
     .description {
         font-size: 14px;
     }
+}
+@media (max-width: 350px) {
+  /* General Adjustments */
+  .sec__container,
+  .QuartzApplication {
+      padding: 15px;
+  }
+
+  .Quartz-products .Quartz-A h1{
+    display: none;
+  }
+
+  .Quartz__subheader {
+      font-size: 32px;
+      margin-bottom: 8px;
+  }
+
+  .Quartz__header {
+      font-size: 16px;
+      margin-bottom: 12px;
+  }
+
+  .Quartz__description {
+      font-size: 12px;
+      margin-bottom: 12px;
+  }
+
+  .chemical-formula-table {
+      width: 100%;
+      font-size: 12px;
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .chemical-formula-table th, .chemical-formula-table td {
+      padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .applications h3 {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+  }
+
+  .applications-list {
+      padding-left: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .applications-list li {
+      font-size: 0.8rem;
+  }
+
+  .title {
+      font-size: 18px;
+      margin-bottom: 8px;
+  }
+
+  .description {
+      font-size: 12px;
+  }
 }

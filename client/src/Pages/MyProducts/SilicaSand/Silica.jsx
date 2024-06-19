@@ -42,11 +42,11 @@ const Silica = () => {
       </div>
       <div className="Quartz-products">
         <div className="Quartz-A">
-          <h1 className="text-5xl font-bold text-indigo-800 ml-24">
+          <h1 className="text-5xl font-bold text-indigo-800 ml-24  ">
             Our Products
           </h1>
         </div>
-        <div className=" Quartz-B hidden lg:block">
+        <div className=" Quartz-B hidden md:block">
           <PostCarousel />
         </div>
       </div>

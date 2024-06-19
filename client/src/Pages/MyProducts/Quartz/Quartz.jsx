@@ -224,7 +224,7 @@ const Silica = () => {
             Our Products
           </h1>
         </div>
-        <div className=" Quartz-B hidden lg:block">
+        <div className=" Quartz-B hidden md:block">
           <QuartzCarousel />
         </div>
       </div>

@@ -118,9 +118,10 @@ const Labout = () => {
         <p className="section__description">
        
         </p>
-        <div className="about__btn">
-          <a href='/About'><button className="btn">Read More</button></a>
+        <a href='./About'><div className="about__btn">
+        <button className="btn">Read More</button>
         </div>
+        </a>
       </motion.div>
     </div>
   );

@@ -52,7 +52,7 @@ const Silica = () => {
       </div>
 
       <div className="chemical-specs ">
-        <h3>Chemical Formula of Quartz</h3>
+        <h3>Chemical Formula of Silica</h3>
         <table className="chemical-formula-table">
           <thead>
             <tr>
@@ -99,7 +99,7 @@ const Silica = () => {
       </div>
 
  <div className="p-6 bg-Neutral-300 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4 text-indigo-900">Quartz Forms and Sizes</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-indigo-900">SIlica Details</h2>
       <div className="overflow-x-auto">
         <table className="custom-table">
           <thead>

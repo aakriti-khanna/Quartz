@@ -10,7 +10,7 @@ header {
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 
 nav {
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #1476e7;
+  color: #20a7f0;
   text-decoration: none;
 }
 
@@ -126,6 +126,7 @@ nav {
     transition: transform 0.5s ease-in-out;
     z-index: 0;
 
+
   }
 
   .nav-links.nav-active {
@@ -178,7 +179,7 @@ nav {
   }
 
   .nav-links {
-    top: 45px; /* Adjust the position below the header */
+    top: 82px; /* Adjust the position below the header */
     z-index: 0;
   }
 

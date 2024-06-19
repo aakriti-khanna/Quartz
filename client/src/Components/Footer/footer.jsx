@@ -5,9 +5,10 @@ import {
   RiFacebookFill,
   RiLinkedinFill,
   RiPhoneFill,
-  RiRecordMailLine,
+ 
   RiMapPin2Fill,
 } from "react-icons/ri";
+import { IoMdMail } from "react-icons/io";
 import "./footer.css"; // Import CSS for styling
 import mainL from "../../assets/mainlogo1.png"
 
@@ -85,8 +86,9 @@ const Footer = () => {
           </li>
           <li className="flex ">
             <span>
+            <IoMdMail />
             </span>
-              <RiRecordMailLine />
+              
             <div>
               <h5>Email Id</h5>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmqsCJFXVMwslkgkXGbfhjtKjXtnCFfJWRZqRPQMKmnqtwmLgtBgkFkmrCmdwXpkgXWqq">

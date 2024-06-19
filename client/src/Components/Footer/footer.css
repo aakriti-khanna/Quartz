@@ -80,7 +80,7 @@
 }
 
 .footer__socials a:hover {
-  color: #ff6347;
+  color: #20a7f0;
 }
 
 .footer__links {
@@ -100,7 +100,7 @@
 }
 
 .footer__links a:hover {
-  color: #ff6347;
+  color:#20a7f0;
 }
 
 .footer__links span {
@@ -222,7 +222,7 @@
 }
 
 .footer__contact a:hover {
-  color: #ff6347;
+  color:#464e91;
 }
 
 @media (max-width: 991px) {

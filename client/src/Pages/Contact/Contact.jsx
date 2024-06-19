@@ -6,7 +6,10 @@ import {
   FaLinkedin,
   FaMapMarker,
   FaInstagram,
+
 } from "react-icons/fa"; // Correct imports
+
+import { FaLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import "./Contact.css";
@@ -63,7 +66,7 @@ const ContactPage = () => {
         </div>
         <div className="text flex flex-wrap">
           <p>
-            We value your feedback and are here to assist you with any questions
+            We are here to assist you with any questions
             or concerns. 
           </p>
         </div>
@@ -83,7 +86,7 @@ const ContactPage = () => {
                 <a href="https://www.google.com/maps/place/1,+Sama-Savli+Rd,+BSNL+Colony,+Karelibagh,+Vadodara,+Gujarat+390002/@22.337618,73.204826,16z/data=!4m6!3m5!1s0x395fcf2296e2134d:0xeee6cdcb2b3ea73b!8m2!3d22.3376176!4d73.2048262!16s%2Fg%2F11jyyrc7_h?hl=en&entry=ttu">
                   <li>
                     <span>
-                      <FaMapMarker
+                    <FaLocationDot 
                         size={32}
                         style={{ color: "white", fontWeight: "bold" }}
                       />

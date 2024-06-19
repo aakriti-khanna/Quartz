@@ -21,7 +21,7 @@ const Home = () => {
     // <div>Home</div>
     <>
    
-    <div className="Home ">
+    <div className="Home overflox-x-clip ">
 
       <div className="Carousel-About">
         <Carousel />

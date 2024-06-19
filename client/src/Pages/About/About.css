@@ -232,11 +232,13 @@
   align-items: center;
   padding: 20px;
   overflow: hidden;
+ 
+
 }
 
-.chooseus__content {
+/* .chooseus__content {
   max-width: 50%;
-}
+} */
 
 .chooseus__list {
   list-style-type: disc;
@@ -329,4 +331,10 @@
 .values__section .section__header ,
 .trust__section .section__header {
   color: #1442a6;
+}
+@media (max-width: 350px) {
+  .chooseus__section,
+  .chooseus__content {
+    padding: 20px 10px; /* Adjusted padding for smaller screens */
+  }
 }

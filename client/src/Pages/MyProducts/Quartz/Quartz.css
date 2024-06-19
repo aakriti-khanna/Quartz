@@ -75,9 +75,11 @@
 }
 
 .chemical-formula-table {
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
+    overflow-x: auto;
 }
 
 .chemical-formula-table th, .chemical-formula-table td {
@@ -290,12 +292,8 @@
         font-size: 14px;
     }
 
-    .Quartz-products .Quartz-A h1{
-      display: none;
-  
-    }
     .chemical-formula-table {
-        width: 50%;
+        width: 100%;
     }
 
     .applications h3 {
@@ -322,6 +320,7 @@
         font-size: 14px;
     }
 }
+
 @media (max-width: 350px) {
   /* General Adjustments */
   .sec__container,

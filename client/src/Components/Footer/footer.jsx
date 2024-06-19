@@ -72,18 +72,18 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer__col ">
-        <h3 className="text-white py-2">Contact Us</h3>
+        <h3 className="text-white py-2 footerContact text-left">Contact Us</h3>
         <ul className="footer__links ">
           <li className="flex ">
             <span>
               <RiPhoneFill />
             </span>
             <div>
-              <h5 className="ml-4">Phone No</h5>
+              <h5 >Phone No</h5>
             <a href="#"><p>+91 9876543210</p></a>  
             </div>
           </li>
-          <li className="flex">
+          <li className="flex ">
             <span>
               <RiRecordMailLine />
             </span>

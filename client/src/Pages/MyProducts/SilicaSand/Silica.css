@@ -75,7 +75,7 @@
 }
 
 .chemical-formula-table {
-    width: 80%;
+    width: 70%; /* Reduced width for better alignment */
     margin: 20px auto;
     border-collapse: collapse;
 }
@@ -330,6 +330,7 @@
         font-size: 14px;
     }
 }
+
 @media (max-width: 350px) {
   /* General Adjustments */
   .sec__container,

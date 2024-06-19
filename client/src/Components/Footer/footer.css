@@ -250,3 +250,18 @@
     font-size: 0.8rem;
   }
 }
+
+
+@media (max-width: 350px) {
+  .footer__contact h3 {
+    font-size: 1.1rem;
+    
+    
+  }
+
+  .footer__contact p {
+    font-size: 0.8rem;
+  }
+
+
+}

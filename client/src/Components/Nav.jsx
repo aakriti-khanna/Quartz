@@ -483,7 +483,7 @@ const Nav = () => {
           <h4 className='text-sm'>A Step Towards Quality</h4>
         </span>
 
-        <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''} z-10 text-lg`}>
+        <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''}  text-lg`}>
           <li><a href="./"><FaHome /><span>Home</span></a></li>
           <li><a href="./About"><FaInfoCircle /><span>About</span></a></li>
           <li className="dropdown">

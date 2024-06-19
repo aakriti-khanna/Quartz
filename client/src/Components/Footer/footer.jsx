@@ -85,8 +85,8 @@ const Footer = () => {
           </li>
           <li className="flex ">
             <span>
-              <RiRecordMailLine />
             </span>
+              <RiRecordMailLine />
             <div>
               <h5>Email Id</h5>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmqsCJFXVMwslkgkXGbfhjtKjXtnCFfJWRZqRPQMKmnqtwmLgtBgkFkmrCmdwXpkgXWqq">

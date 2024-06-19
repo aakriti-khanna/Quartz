@@ -229,6 +229,16 @@
   .footer__contact {
     margin: 1rem auto;
   }
+
+  .footerContact{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__links li{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -239,6 +249,16 @@
   .footer__contact p {
     font-size: 0.9rem;
   }
+
+  .footerContact{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__links li{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 440px) {
@@ -248,6 +268,16 @@
 
   .footer__contact p {
     font-size: 0.8rem;
+  }
+
+  .footerContact{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__links li{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -261,6 +291,16 @@
 
   .footer__contact p {
     font-size: 0.8rem;
+  }
+
+  .footerContact{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__links li{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

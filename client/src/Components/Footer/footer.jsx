@@ -114,7 +114,8 @@ const Footer = () => {
       </div>
     </div>
     <div className="footer__bar">
-      Copyright © 2023 Web Design Mastery. All rights reserved. || Made By SOFTAPPER
+      Copyright © 2023  All rights reserved. || 
+     <a href="https://www.softapper.com/index.html"> <span className="text-gray-400 ">Made By SOFTAPPER</span></a>
     </div>
   </footer>
   

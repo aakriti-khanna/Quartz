@@ -72,19 +72,19 @@ const Banner = () => {
     >
       <motion.div className="banner__content" variants={containerVariants}>
         <motion.div className="banner__card" variants={itemVariants}>
-          <h4>25+</h4>
-          <p>Properties Available</p>
+          <h4>1000+</h4>
+          <p>Work Completed</p>
         </motion.div>
         <motion.div className="banner__card" variants={itemVariants}>
-          <h4>350+</h4>
-          <p>Bookings Completed</p>
+          <h4>800+</h4>
+          <p>Client Satisfaction</p>
         </motion.div>
         <motion.div className="banner__card" variants={itemVariants}>
           <h4>600+</h4>
           <p>Happy Customers</p>
         </motion.div>
         <motion.div className="banner__card" variants={itemVariants}>
-          <h4>50+</h4>
+          <h4>10+</h4>
           <p>Awards Won</p>
         </motion.div>
       </motion.div>

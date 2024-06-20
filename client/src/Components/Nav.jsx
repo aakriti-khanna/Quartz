@@ -463,6 +463,7 @@ import './Nav.css';
 import logo from "../assets/mainlogo1.png";
 import { FaHome, FaInfoCircle, FaBox, FaCog, FaImages,  FaComments  } from 'react-icons/fa';
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -476,25 +477,30 @@ const Nav = () => {
     <header>
       <nav>
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <a href='/'><img src={logo} alt="Logo" /></a>
         </div>
+
         <span className='text-white navDescription'>
-          <h1 className='text-xl'> Silica Floor Industries</h1>
+          <a href='/' className='white-link' ><h1 className='text-xl'> Silica Floor Industries</h1>
+          
           <h4 className='text-sm'>A Step Towards Quality</h4>
+          </a>
+         
         </span>
 
         <ul className={`nav-links ${isNavOpen ? 'nav-active' : ''}  text-lg`}>
           <li><a href="./"><FaHome /><span>Home</span></a></li>
-          <li><a href="./About"><FaInfoCircle /><span>About</span></a></li>
+          <li><a href="./About"><FaInfoCircle /><span>About</span>
+          </a></li>
           <li className="dropdown">
-            <a href="#"><FaBox /><span>Products</span></a>
+            <a href="#"><FaBox /><span>Products </span><RiArrowDropDownLine /></a>
             <div className="dropdown-content">
               <a href="/Silicasand">Silica</a>
               <a href="./Quartz">Quartz</a>
             </div>
           </li>
           <li className="dropdown">
-            <a href="#"><FaCog /><span>Operations</span></a>
+            <a href="#"><FaCog /><span>Operations </span> <RiArrowDropDownLine /></a>
             <div className="dropdown-content">
               <a href="./Mining">Mining</a>
               <a href="./Processing">Processing</a>

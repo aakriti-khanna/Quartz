@@ -184,7 +184,7 @@ nav {
   }
 
   .logo img {
-    width: 60px;
+    width: 65px;
   }
 
   .nav-links a {
@@ -193,9 +193,20 @@ nav {
 
    nav  span .navDescription {
     display: none;
-    color:black
+    color:black;
+   
   }
-  .hamburger div {
+
+  nav .navDescription h1 {
+   
+    font-size:1rem;
+   
+  }
+  nav .navDescription h4 {
+   
+    font-size:0.81rem;
+   
+  }  .hamburger div {
     width: 25px;
     height: 3px;
   }

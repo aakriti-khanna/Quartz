@@ -230,7 +230,7 @@ const Rooms = () => {
         OUR PRODUCT
       </motion.p>
       <motion.h2 className="section__header" variants={itemVariants}>
-        The Most Memorable Rest Time Starts Here.
+      Your Source for Premium Silica and Quartz Products.
       </motion.h2>
       <motion.div className="room__grid" variants={containerVariants}>
         <motion.div className="room__card" variants={itemVariants}>

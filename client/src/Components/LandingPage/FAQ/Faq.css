@@ -35,10 +35,19 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .faqs-list {
   width: calc(50% - 10px);
+}
+
+@media (max-width: 1024px) {
+  .faqs-list {
+    width: calc(50% - 10px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -54,7 +63,6 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   height: auto;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   width: 100%;
 }
@@ -105,4 +113,27 @@ body {
   margin-top: 10px;
   font-size: 16px;
   color: #666;
+}
+
+/* Additional responsiveness for smaller devices */
+@media (max-width: 576px) {
+  .faqs-section {
+    padding: 20px;
+  }
+
+  .faqs-section h3 {
+    font-size: 20px;
+  }
+
+  .faqs-item {
+    padding: 10px;
+  }
+
+  .faqs-question {
+    font-size: 16px;
+  }
+
+  .faqs-answer {
+    font-size: 14px;
+  }
 }

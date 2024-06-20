@@ -88,10 +88,10 @@ import { RiShieldStarLine, Ri24HoursLine, RiHeadphoneLine, RiMap2Line } from 're
 import './Service.css';
 
 const serviceList = [
-  { icon: <RiShieldStarLine />, text: 'High Class Security' },
-  { icon: <Ri24HoursLine />, text: '24 Hours Room Service' },
-  { icon: <RiHeadphoneLine />, text: 'Conference Room' },
-  { icon: <RiMap2Line />, text: 'Tourist Guide Support' },
+  { icon: <RiShieldStarLine />, text: 'Mining and Processing' },
+  { icon: <Ri24HoursLine />, text: 'Logistics and Delivery' },
+  { icon: <RiHeadphoneLine />, text: "Technical Support" },
+  { icon: <RiMap2Line />, text: "Quality Assurance" },
 ];
 
 const Services = () => {

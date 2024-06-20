@@ -21,7 +21,7 @@ const Home = () => {
     // <div>Home</div>
     <>
    
-    <div className="Home overflox-x-clip ">
+    <div className="Home overflow-hidden ">
 
       <div className="Carousel-About">
         <Carousel />

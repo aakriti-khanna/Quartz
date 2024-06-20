@@ -114,7 +114,7 @@ const Labout = () => {
       </motion.div>
       <motion.div className="about__content" ref={ref} initial="hidden" animate={controls}>
         <p className="section__subheader">ABOUT US</p>
-        <h2 className="section__header">The Best Holidays Start Here!</h2>
+        <h2 className="section__header">Delivering quality and reliability for all your industrial needs.</h2>
         <p className="section__description">
        
         </p>

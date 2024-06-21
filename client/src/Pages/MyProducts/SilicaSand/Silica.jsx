@@ -26,18 +26,19 @@ const Silica = () => {
           <img src={QuartzImage} alt="Quartz" className="h-96" />
         </div>
         <div className="Quartz__content">
-          <p className="Quartz__subheader">Silica</p>
-          <h2 className="Quartz__header">The Best Holidays Start Here!</h2>
+          <p className="Quartz__subheader">Silica Sand</p>
+          <h2 className="Quartz__header"></h2>
           <p className="Quartz__description leading-loose">
-            Quartz is a mineral composed of silicon and oxygen atoms in a
-            continuous framework of SiO4 silicon-oxygen tetrahedra, with each
-            oxygen being shared between two tetrahedra, giving an overall
-            chemical formula of SiO2. Quartz is a hard, crystalline mineral that
-            is commonly used in the production of glass, ceramics, electronics,
-            and many other products. It is also used as a component in the
-            manufacturing of quartz countertops, which have become increasingly
-            popular in modern homes
+            Silica Sand is composed of silicon dioxide particles and is commonly
+            used in glassmaking, foundry molds, sandblasting, filtration
+            systems, and hydraulic fracturing due to its unique properties such
+            as high purity, grain size, and chemical inertness. Its widespread
+            availability and versatility make it a vital component in numerous
+            industrial processes.
+
+
           </p>
+
         </div>
       </div>
       <div className="Quartz-products">
@@ -80,72 +81,82 @@ const Silica = () => {
       </div>
 
       <div className="applications flex px-auto mx-auto ">
-        
         <div className="img  w-1/3 ml-10">
           {" "}
           <img src={QuartzImage} alt="Quartz" />
         </div>
         <div className="pt-8 md:pl-24 md:ml-10 ">
-        <h3>Applications of Quartz</h3>
+          <h3>Applications of Silica Sand</h3>
           <ul className="applications-list leading-loose">
-            <li>Ceramics: Quartz is used in the manufacturing of ceramicsto improve itsstrength and durability.</li>
-            <li>Glass Manufacturing: Quartz grains are used in the manufacturing of glassto improve its transparency and durability.</li>
-            <li>Construction: Quartz stone is widely used in the construction industry for making countertops, flooring, and wall cladding.</li>
-            <li>Electronics: Quartz crystals are used in electronic devicessuch as watches, clocks, and computersto provide accurate timing.</li>
-            <li>Paints and Coatings: Quartz powderis used as a filler material in paints and coatingsto improve their durability and scratch resistance.</li>
-           
+            <li>Foundry Sand: Used in metal casting processes to create molds and cores.</li>
+            <li>Construction: Component of concrete, mortar, and various construction materials.</li>
+            <li>Water Filtration: Utilized in water treatment facilities to filter and purify water.</li>
+            <li>
+            Glass Manufacturing: Essential raw material for producing glass products, including windows, bottles, and fiberglass.
+            </li>
+            <li>
+            Ceramics: Integral part of ceramic production, including tiles, sanitary ware, and tableware.
+            </li>
+            <li>
+            Chemicals: Base material for the production of silicon-based chemicals and compounds.
+            </li>
+            <li>
+            Sports and Leisure: Used in sports surfaces, golf course bunkers, and playgrounds.
+            </li>
           </ul>
         </div>
       </div>
 
- <div className="p-6 bg-Neutral-300 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4 text-indigo-900">SIlica Details</h2>
-      <div className="overflow-x-auto">
-        <table className="custom-table">
-          <thead>
-            <tr className="table-header">
-              <th>Form</th>
-              <th>Size</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="table-row">
-              <td>Granules</td>
-              <td>0.1 - 0.5 mm</td>
-            </tr>
-            <tr className="table-row">
-              <td>Powder</td>
-              <td>0.5 - 1 mm</td>
-            </tr>
-            <tr className="table-row">
-              <td>Lumps</td>
-              <td>1 - 5 mm</td>
-            </tr>
-            <tr className="table-row">
-              <td>Crystals</td>
-              <td>5 - 10 mm</td>
-            </tr>
-            <tr className="table-row">
-              <td>Pebbles</td>
-              <td>10 - 20 mm</td>
-            </tr>
-            <tr className="table-row">
-              <td>Sand</td>
-              <td>20 - 50 mm</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="p-6 bg-Neutral-300 rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold mb-4 text-indigo-900">
+          SIlica Details
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="custom-table">
+            <thead>
+              <tr className="table-header">
+                <th>Form</th>
+                <th>Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="table-row">
+                <td>Coarse Silica Sand</td>
+                <td>greater than 0.5 mm </td>
+              </tr>
+              <tr className="table-row">
+                <td>Medium Silica Sand: </td>
+                <td>0.125 mm - 0.5 mm. </td>
+              </tr>
+              <tr className="table-row">
+                <td>Fine Silica Sand:</td>
+                <td> 0.0625 mm - 0.125 mm</td>
+              </tr>
+              <tr className="table-row">
+                <td>Very Fine Silica Sand:</td>
+                <td> less than 0.0625 mm</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-    
 
-
-    <div className="quality-assurance-container">
-      <h2 className="title">Quality Assurance Program</h2>
-      <p className="description">
-        Our company has implemented a robust quality assurance program that involves various checks and tests to ensure that all materials and components supplied by our suppliers meet the required specifications. We have established a set of quality guidelines and standards that our suppliers must adhere to in order to maintain their status as our approved vendors. We conduct regular quality audits of our suppliers' facilities to ensure that they are equipped to meet our quality requirements. During these audits, we inspect the supplier's manufacturing processes, equipment, and procedures to ensure that they are in compliance with the required standards.
-      </p>
-    </div>
+      <div className="quality-assurance-container">
+        <h2 className="title">Quality Assurance Program</h2>
+        <p className="description">
+          Our company has implemented a robust quality assurance program that
+          involves various checks and tests to ensure that all materials and
+          components supplied by our suppliers meet the required specifications.
+          We have established a set of quality guidelines and standards that our
+          suppliers must adhere to in order to maintain their status as our
+          approved vendors. We conduct regular quality audits of our suppliers'
+          facilities to ensure that they are equipped to meet our quality
+          requirements. During these audits, we inspect the supplier's
+          manufacturing processes, equipment, and procedures to ensure that they
+          are in compliance with the required standards.
+        </p>
+      </div>
     </div>
   );
 };

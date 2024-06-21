@@ -89,7 +89,7 @@ import './Service.css';
 
 const serviceList = [
   { icon: <RiShieldStarLine />, text: 'Mining and Processing' },
-  { icon: <Ri24HoursLine />, text: 'Logistics and Delivery' },
+  { icon: <Ri24HoursLine />, text: 'Production and Transportation' },
   { icon: <RiHeadphoneLine />, text: "Technical Support" },
   { icon: <RiMap2Line />, text: "Quality Assurance" },
 ];

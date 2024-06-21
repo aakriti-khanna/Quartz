@@ -10,6 +10,7 @@ import Rooms from "../Components/LandingPage/Product/Product";
 import Services from "../Components/LandingPage/Services/Service.jsx";
 import Banner from "../Components/LandingPage/Banner/Banner.jsx";
 import FAQ from "../Components/LandingPage/FAQ/FAQ.jsx";
+import WhatsappSms from "../Components/Whatsappicon/whatsappicon.jsx";
 // import { useInView } from "react-intersection-observer";
 
 const Home = () => {
@@ -70,6 +71,7 @@ const Home = () => {
         </motion.div>
       </div>
 
+<div><WhatsappSms/></div>
     </div>
     </>
   );

@@ -216,6 +216,10 @@ const Silica = () => {
             manufacturing of quartz countertops, which have become increasingly
             popular in modern homes
           </p>
+          <p  className="Quartz__description leading-loose">At SILICA FLOOR INDUSTRIES we provide two types of Quartz Milky White and Snow White Quartz </p>
+         
+
+
         </div>
       </div>
       <div className="Quartz-products">
@@ -289,7 +293,7 @@ const Silica = () => {
           <tbody>
             <tr className="table-row">
               <td>Granules</td>
-              <td>0.1 - 0.5 mm</td>
+              <td>0.1 - 0.5 mm ,0.5 - 1 mm, 1 - 5 mm</td>
             </tr>
             <tr className="table-row">
               <td>Powder</td>
@@ -301,7 +305,7 @@ const Silica = () => {
             </tr>
             <tr className="table-row">
               <td>Crystals</td>
-              <td>5 - 10 mm</td>
+              <td>5 - 10 mm ,10 - 20 mm</td>
             </tr>
             <tr className="table-row">
               <td>Pebbles</td>

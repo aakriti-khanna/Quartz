@@ -23,7 +23,7 @@ import lgRotate from "lightgallery/plugins/rotate";
 import asset1 from "../assets/gall1.jpeg";
 import asset2 from "../assets/gall2.jpeg";
 import asset3 from "../assets/gall3.jpeg";
-import asset4 from "../assets/gall4.jpeg";
+
 import asset5 from "../assets/gall5.jpeg";
 import asset6 from "../assets/gall6.jpeg";
 import asset7 from "../assets/gall7.jpeg";
@@ -66,61 +66,89 @@ import asset42 from "../assets/gall40.jpeg";
 import asset43 from "../assets/gall41.jpeg";
 import asset44 from "../assets/gall42.jpeg";
 import asset45 from "../assets/gall43.jpeg";
-import asset46 from "../assets/gall44.jpeg";
+import asset46 from "../assets/gall49.jpeg";
+import asset47 from "../assets/gall50.jpeg";
+import asset48 from "../assets/gall51.jpeg";
+import asset49 from "../assets/gall55.jpeg";
+import asset50 from "../assets/gall56.jpeg";
+import asset51 from "../assets/gall6.jpeg";
+import asset52 from "../assets/quartz23.jpeg";
+import asset53 from "../assets/quartz21.jpeg";
+import asset54 from "../assets/quartz22.jpeg";
+import asset55 from "../assets/gallery4.jpg";
+
+
 // import asset23 from "../assets/Sil.jpeg";
 
 const images = [
-  { src: asset17},
+  { src: asset17 },
 
-  { src: asset1},
+  { src: asset1 },
   { src: asset2 },
   { src: asset19 },
   { src: asset18 },
   { src: asset3 },
-  { src: asset4 },
+
   { src: asset5 },
-  { src: asset6},
-  { src: asset7},
+
+  { src: asset7 },
   { src: asset8 },
   { src: asset14 },
-  { src: asset9},
-  { src: asset15},
-  { src: asset10 },
-  { src: asset11},
+  { src: asset9 },
+  { src: asset15 },
+
+
+  { src: asset24 },
+  { src: asset25 },
+  { src: asset26 },
+  { src: asset11 },
   { src: asset12 },
   // { src: asset13 },
 
-  {src: asset18 },
+  { src: asset18 },
   { src: asset19 },
+  { src: asset49 },
+  { src: asset50},
+  { src: asset51 },
 
-  { src:asset20 },
-  { src:asset21 },
+  { src: asset53 },
+  { src: asset54 },
+
+  { src: asset20 },
+  { src: asset21 },
   // { src:asset22 },
-  { src:asset23 },
-  { src:asset24 },
-  { src:asset25 },
-  { src:asset26},
-  { src:asset27},
-  { src:asset28},
-  { src:asset29},
-  { src:asset30},
-  { src:asset31},
-  { src:asset32},
-  { src:asset33},
-  { src:asset34},
-  { src:asset35},
-  { src:asset36},
-  { src:asset37},
-  { src:asset38},
-  { src:asset39},
-  { src:asset40},
-  { src:asset41},
-  { src:asset42},
-  { src:asset43},
-  { src:asset44},
-  { src:asset45},
-  { src:asset46},
+  { src: asset23 },
+  { src: asset48 },
+  { src: asset42 },
+  { src: asset55 },
+  
 
+ 
+  { src: asset27 },
+  { src: asset47 },
+  { src: asset28 },
+  { src: asset29 },
+  { src: asset50 },
+  { src: asset51 },
+  { src: asset52 },
+
+  { src: asset30 },
+  { src: asset31 },
+  { src: asset32 },
+  { src: asset33 },
+  { src: asset34 },
+  { src: asset35 },
+  { src: asset36 },
+  { src: asset37 },
+  { src: asset38 },
+  { src: asset39 },
+  { src: asset40 },
+  { src: asset41 },
+
+  { src: asset43 },
+  { src: asset44 },
+  { src: asset45 },
+  { src: asset46 },
 ];
 
 export function Gallery() {

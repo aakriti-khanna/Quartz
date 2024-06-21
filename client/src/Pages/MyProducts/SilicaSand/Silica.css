@@ -304,6 +304,8 @@
     }
     .chemical-formula-table {
         width: 100%;
+        font-size: 10px;
+        overflow-x: auto;
     }
 
     .applications h3 {

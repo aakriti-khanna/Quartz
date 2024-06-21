@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaWhatsapp,  FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import{FaCommentSms} from  'react-icons/fa6'
+// import{FaCommentSms} from  'react-icons/fa6'
 const WhatsappSms = () => {
   const [showIcons, setShowIcons] = useState(true);
 

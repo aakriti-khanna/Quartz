@@ -112,7 +112,7 @@ const Silica = () => {
               and purify water.
             </li>
             <li>
-              Glass Manufacturing: Essential raw material for producing glass
+            Solar Glass Manufacturing: Essential raw material for producing glass
               products, including windows, bottles, and fiberglass.
             </li>
             <li>

@@ -328,7 +328,7 @@ const Silica = () => {
               </tr>
               <tr className="table-row">
                 <td>Powder</td>
-                <td>0.5 - 1 mm</td>
+                <td>45-75 micron</td>
               </tr>
               <tr className="table-row">
                 <td>Lumps</td>
@@ -344,7 +344,7 @@ const Silica = () => {
               </tr>
               <tr className="table-row">
                 <td>Sand</td>
-                <td>20 - 50 mm</td>
+                <td>	0.125 mm - 0.5 mm.</td>
               </tr>
             </tbody>
           </table>

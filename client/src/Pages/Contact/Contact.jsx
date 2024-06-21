@@ -110,7 +110,7 @@ const ContactPage = () => {
                     <span className="mt-3">silicafloor21@gmail.com</span>
                   </li>
                 </a>
-<a href="tel:+919825313900">
+<a href="tel:+91 9825313900">
                 <li>
                   <span>
                     <img src={A} alt="Call Icon" />

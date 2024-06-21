@@ -187,7 +187,7 @@ import { useInView } from 'react-intersection-observer';
 import './Product.css';
 import Sil from "../../../assets/Sil.jpg";
 import Silica from "../../../assets/Silica.jpg";
-import Q1 from "../../../assets/Q1.jpg";
+import Q1 from "../../../assets/quartz21.jpeg";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -237,9 +237,9 @@ const Rooms = () => {
           <div className="room__card__image">
             <img src={Sil} alt="room" />
             <div className="room__card__icons">
-              <span><i className="ri-heart-fill"></i></span>
+              {/* <span><i className="ri-heart-fill"></i></span>
               <span><i className="ri-paint-fill"></i></span>
-              <span><i className="ri-shield-star-line"></i></span>
+              <span><i className="ri-shield-star-line"></i></span> */}
             </div>
           </div>
           <div className="room__card__details">
@@ -255,9 +255,9 @@ const Rooms = () => {
           <div className="room__card__image">
             <img src={Q1} alt="room" />
             <div className="room__card__icons">
-              <span><i className="ri-heart-fill"></i></span>
+              {/* <span><i className="ri-heart-fill"></i></span>
               <span><i className="ri-paint-fill"></i></span>
-              <span><i className="ri-shield-star-line"></i></span>
+              <span><i className="ri-shield-star-line"></i></span> */}
             </div>
           </div>
           <div className="room__card__details">
@@ -272,9 +272,9 @@ const Rooms = () => {
           <div className="room__card__image">
             <img src={Silica} alt="room" />
             <div className="room__card__icons">
-              <span><i className="ri-heart-fill"></i></span>
+              {/* <span><i className="ri-heart-fill"></i></span>
               <span><i className="ri-paint-fill"></i></span>
-              <span><i className="ri-shield-star-line"></i></span>
+              <span><i className="ri-shield-star-line"></i></span> */}
             </div>
           </div>
           <div className="room__card__details">

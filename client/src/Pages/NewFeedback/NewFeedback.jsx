@@ -147,9 +147,9 @@ import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import "./NewFeedback.css"; // Ensure this CSS file is created and styled
 
-const SERVICE_ID = "service_sy06e0f";
-const TEMPLATE_ID = "template_2dnlc5k";
-const PUBLIC_KEY = "DHp9L8nWAAEJkf0F3";
+const SERVICE_ID = "service_x28hgwg";
+const TEMPLATE_ID = "template_ybz6kgx";
+const PUBLIC_KEY = "9VXHWx1fIRCOdMo8L";
 
 const FeedbackForm = () => {
   const [rating, setRating] = useState("");

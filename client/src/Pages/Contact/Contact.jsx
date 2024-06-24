@@ -18,9 +18,9 @@ import B from "../../FeedImage/location.png";
 import C from "../../FeedImage/mail.png";
 import D from "../../FeedImage/news2.png";
 
-const SERVICE_ID = "service_sy06e0f";
-const TEMPLATE_ID = "template_2dnlc5k";
-const PUBLIC_KEY = "DHp9L8nWAAEJkf0F3";
+const SERVICE_ID = "service_x28hgwg";
+const TEMPLATE_ID = "template_ybz6kgx";
+const PUBLIC_KEY = "9VXHWx1fIRCOdMo8L";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({

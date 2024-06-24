@@ -153,7 +153,7 @@ const PUBLIC_KEY = "9VXHWx1fIRCOdMo8L";
 
 const FeedbackForm = () => {
   const [rating, setRating] = useState("");
-  const [reasons, setReasons] = useState("");
+  const [message, setReasons] = useState("");
   const [contactPermission, setContactPermission] = useState(false);
   const [researchGroup, setResearchGroup] = useState(false);
 
@@ -161,11 +161,14 @@ const FeedbackForm = () => {
     setRating(selectedRating);
   };
 
+ 
+
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const formData = {
       rating,
-      reasons,
+      message,
       contactPermission,
       researchGroup,
     };
@@ -225,13 +228,13 @@ const FeedbackForm = () => {
               </div>
             </div>
             <div className="form-group">
-              <label htmlFor="reasons">What are the main reasons for your rating?</label>
+              <label htmlFor="message">What are the main reasons for your rating?</label>
               <textarea
-                name="reasons"
-                id="reasons"
+                name="message"
+                id="message"
                 cols="30"
                 rows="10"
-                value={reasons}
+                value={message}
                 onChange={(e) => setReasons(e.target.value)}
               ></textarea>
             </div>
